@@ -11,12 +11,19 @@ namespace _1._1
     {
         static void Main(string[] args)
         {
-            Dictionary <int , string > estudiantes = new Dictionary<int, string> ();
+            Dictionary<int, string> estudiantes = new Dictionary<int, string>();
 
             estudiantes.Add(5001, "James Carter");
             estudiantes.Add(1995, " Bruno Mendez");
             estudiantes.Add(2026, "Carla Hernandez");
 
+            int BuscarID = 1995;
+
+            if (estudiantes.ContainsKey(BuscarID))
+            {
+                string nombre = estudiantes[BuscarID];
+                Console.WriteLine("El  estudiante con el ID "+ BuscarID + " es : "+ nombre);
+            }
 
 
         }
