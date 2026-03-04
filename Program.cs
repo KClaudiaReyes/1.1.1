@@ -22,7 +22,11 @@ namespace _1._1
             if (estudiantes.ContainsKey(BuscarID))
             {
                 string nombre = estudiantes[BuscarID];
-                Console.WriteLine("El  estudiante con el ID "+ BuscarID + " es : "+ nombre);
+                Console.WriteLine("El  estudiante con el ID " + BuscarID + " es : " + nombre);
+            }
+            else
+            {
+                Console.WriteLine(" el ID no existe ");
             }
 
 
